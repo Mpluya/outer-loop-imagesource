@@ -8,4 +8,4 @@ metadata:
     apps.tanzu.vmware.com/has-tests: "true"
 spec:
   source:
-    image: harbor-repo.vmware.com/tapsme/supply-chain/outer-loop-default@sha256:537112414b86f969e42a6ad44370636f020c17b0dfc2905a13c98c0bfbd417c7
+    image: harbor-repo.vmware.com/tapsme/demo:0.0.1-SNAPSHOT

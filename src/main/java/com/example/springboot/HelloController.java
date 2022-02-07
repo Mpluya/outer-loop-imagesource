@@ -8,7 +8,7 @@ public class HelloController {
 
 	@RequestMapping("/")
 	public String index() {
-		return "cosign testing";
+		return "custom source scan testing";
 	}
 
 }

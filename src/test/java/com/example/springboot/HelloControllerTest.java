@@ -21,11 +21,11 @@ class HelloControllerTest {
 
     @Test
     void index() throws Exception {
-        assertEquals("cosign testing", controller.index());
+        assertEquals("custom source scan testing", controller.index());
 
         mockMvc
             .perform(get("/"))
             .andExpect(status().isOk())
-            .andExpect(content().string("cosign testing"));
+            .andExpect(content().string("custom source scan testing"));
     }
 }

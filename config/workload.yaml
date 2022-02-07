@@ -1,14 +1,11 @@
 apiVersion: carto.run/v1alpha1
 kind: Workload
 metadata:
-  name: outer-loop
+  name: outer-loop-imagesource
   labels:
     apps.tanzu.vmware.com/workload-type: web
-    app.kubernetes.io/part-of: outer-loop
+    app.kubernetes.io/part-of: outer-loop-imagesource
     apps.tanzu.vmware.com/has-tests: "true"
 spec:
   source:
-    git:
-      url: https://github.com/sample-accelerators/outer-loop
-      ref:
-        branch: main
+    image: harbor-repo.vmware.com/tapsme/supply-chain/outer-loop-default@sha256:537112414b86f969e42a6ad44370636f020c17b0dfc2905a13c98c0bfbd417c7
